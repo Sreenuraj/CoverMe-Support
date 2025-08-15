@@ -261,7 +261,7 @@ During initial launch phase, the main codebase is private. We welcome:
 
 ## 📞 Contact & Support
 
-**Developer**: Sreenuraj Varma  
+**Developer**: Sreenuraj Varma M 
 **Email**: sreenurajvarma@gmail.com  
 **Support**: [GitHub Issues](https://github.com/Sreenuraj/CoverMe-Support/issues)  
 **Privacy Policy**: [View Policy](https://sreenuraj.github.io/CoverMe-Support/privacy-policy.html)
@@ -270,7 +270,7 @@ During initial launch phase, the main codebase is private. We welcome:
 
 ## 💝 Support CoverMe Development
 
-<div align="center">
+<div align="left">
 
 ### Help Keep CoverMe Free and Growing! 
 
