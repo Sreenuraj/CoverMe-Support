@@ -192,7 +192,7 @@ Found a bug or have a feature request?
 
 ### ☕ **Support Development**
 CoverMe is free to use and will always remain so. If you find it valuable for your job search:
-- **[☕ Buy me a coffee](https://ko-fi.com/sreenurajvarma)** - Support continued development
+- **[☕ Support via PayPal](https://paypal.me/sreenuraj)** - Help fund continued development
 - **⭐ Star this repository** - Help others discover CoverMe
 - **📢 Share with colleagues** - Word of mouth is the best support
 
