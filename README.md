@@ -10,15 +10,6 @@
 
 CoverMe is the most advanced AI-powered Chrome extension for career professionals, providing instant job compatibility analysis, persistent career conversations, and intelligent skill management - all while keeping your data completely private.
 
-### 🚀 Quick Demo Videos
-
-| Feature | Demo | Description |
-|---------|------|-------------|
-| **🎯 Main Analysis** | [Watch Demo](https://github.com/Sreenuraj/CoverMe-Support/raw/main/demos/main-popup-demo.mov) | Instant job compatibility with color-coded results |
-| **💬 AI Chat** | [Watch Demo](https://github.com/Sreenuraj/CoverMe-Support/raw/main/demos/ai-chat-demo.mov) | Persistent career conversations |
-| **⚡ Live Mode** | [Watch Demo](https://github.com/Sreenuraj/CoverMe-Support/raw/main/demos/live-mode-demo.mov) | Automatic job monitoring |
-| **⚙️ Setup** | [Watch Demo](https://github.com/Sreenuraj/CoverMe-Support/raw/main/demos/options-setup-demo.mov) | Complete configuration walkthrough |
-
 ## ✨ Key Features
 
 ### 🎯 **Intelligent Job Matching**
@@ -193,7 +184,6 @@ Found a bug or have a feature request?
 ### 📚 **Documentation**
 - [Privacy Policy](https://sreenuraj.github.io/CoverMe-Support/privacy-policy.html)
 - [Chrome Web Store Listing](https://chrome.google.com/webstore)
-- [Setup Video Guides](#-quick-demo-videos)
 
 ## 🔮 Roadmap & Future Development
 
