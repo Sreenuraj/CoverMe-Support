@@ -268,6 +268,40 @@ During initial launch phase, the main codebase is private. We welcome:
 
 ---
 
+## 💝 Support CoverMe Development
+
+<div align="center">
+
+### Help Keep CoverMe Free and Growing! 
+
+CoverMe is a **completely free** tool that I've built to help job seekers like you. If it's saved you time, helped you find better opportunities, or given you confidence in your applications, consider supporting its continued development.
+
+**Your support helps:**
+- 🔧 Maintain and improve existing features  
+- ✨ Add new capabilities based on user feedback  
+- 🚀 Keep CoverMe free for everyone  
+- 📱 Develop mobile and web versions  
+
+<br>
+
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue?style=for-the-badge&logo=paypal)](https://paypal.me/sreenuraj)
+
+<br>
+
+**Other ways to support:**
+- ⭐ **Star this repository** to help others discover CoverMe
+- 📢 **Share with colleagues** who are job searching  
+- 🐛 **Report bugs** and suggest improvements via Issues
+- 💬 **Spread the word** on LinkedIn and professional networks
+
+<br>
+
+*Every contribution, no matter the size, makes a meaningful difference in CoverMe's development. Thank you for being part of this journey! 🙏*
+
+</div>
+
+---
+
 <div align="center">
 
 **⭐ Star this repository if CoverMe helps your job search!**
