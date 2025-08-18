@@ -3,7 +3,7 @@
 ## Quick Start (5 minutes)
 
 ### Step 1: Install the Extension
-1. Visit the **[Chrome Web Store](https://chrome.google.com/webstore/detail/coverme)**
+1. Visit the **[Chrome Web Store](https://chromewebstore.google.com/detail/coverme-ai-job-search-int/mljpkbbmodajfilelhfaenppccgkkjhd)**
 2. Click **"Add to Chrome"**
 3. Click **"Add extension"** when prompted
 4. The CoverMe icon appears in your browser toolbar
