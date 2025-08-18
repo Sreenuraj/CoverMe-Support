@@ -17,7 +17,7 @@ This guide walks you through every feature of CoverMe, showing you exactly how m
 ## Initial Setup
 
 ### Step 1: Installation
-1. Visit the [Chrome Web Store](https://chrome.google.com/webstore/detail/coverme)
+1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/coverme-ai-job-search-int/mljpkbbmodajfilelhfaenppccgkkjhd)
 2. Click "Add to Chrome"
 3. The CoverMe icon appears in your browser toolbar
 
