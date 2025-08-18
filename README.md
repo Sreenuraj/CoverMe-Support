@@ -17,7 +17,7 @@ CoverMe helps you understand if you're a good fit for jobs before applying. It's
 ## How to get started
 
 ### 1. Install CoverMe
-**[Install from Chrome Web Store →](https://chrome.google.com/webstore/detail/coverme)**
+**[Install from Chrome Web Store →](https://chromewebstore.google.com/detail/coverme-ai-job-search-int/mljpkbbmodajfilelhfaenppccgkkjhd)**
 
 ### 2. Quick Setup (2 minutes)
 1. **Get your free API key:**
