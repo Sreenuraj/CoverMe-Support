@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete User Guide - CoverMe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            color: #2563eb;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .nav-links a:hover {
+            background: #eff6ff;
+        }
+
+        .main-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin: 2.5rem 0 1rem 0;
+            color: #1f2937;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem 0;
+            color: #374151;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            margin: 1rem 0 0.5rem 0;
+            color: #4b5563;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #6b7280;
+        }
+
+        .toc {
+            background: #f3f4f6;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .toc ol {
+            margin-left: 1.5rem;
+        }
+
+        .toc li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        .feature-section {
+            background: #f9fafb;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #2563eb;
+        }
+
+        .steps {
+            background: #eff6ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .step {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 6px;
+            border-left: 3px solid #2563eb;
+        }
+
+        .step h4 {
+            margin-top: 0;
+            color: #2563eb;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #6b7280;
+        }
+
+        .highlight {
+            background: #fef3c7;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            border-left: 3px solid #f59e0b;
+        }
+
+        .important {
+            background: #fef2f2;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            border-left: 3px solid #ef4444;
+        }
+
+        .tip {
+            background: #ecfdf5;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            border-left: 3px solid #10b981;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'SF Mono', Monaco, monospace;
+        }
+
+        pre {
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .color-demo {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            margin: 0.25rem;
+            font-weight: 500;
+        }
+
+        .green-highlight {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .purple-highlight {
+            background: #f3e8ff;
+            color: #7c2d92;
+        }
+
+        .red-highlight {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #6b7280;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .main-content {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">CoverMe</div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="user-guide.html">User Guide</a>
+                    <a href="https://github.com/Sreenuraj/CoverMe-Support">GitHub</a>
+                    <a href="https://chrome.google.com/webstore/detail/coverme">Install</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h1>CoverMe Complete User Guide</h1>
+            <p>This guide walks you through every feature of CoverMe, showing you exactly how much detail and thought went into building this job search intelligence tool.</p>
+
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <ol>
+                    <li><a href="#initial-setup">Initial Setup</a></li>
+                    <li><a href="#options-page">Options Page Deep Dive</a></li>
+                    <li><a href="#three-ways">Three Ways to Analyze Jobs</a></li>
+                    <li><a href="#understanding-results">Understanding Analysis Results</a></li>
+                    <li><a href="#skill-management">Interactive Skill Management</a></li>
+                    <li><a href="#ai-chat">AI Chat System</a></li>
+                    <li><a href="#highlighting">Visual Highlighting System</a></li>
+                    <li><a href="#usage-analytics">Usage Analytics</a></li>
+                    <li><a href="#data-management">Data Management</a></li>
+                    <li><a href="#advanced-features">Advanced Features</a></li>
+                </ol>
+            </div>
+
+            <section id="initial-setup">
+                <h2>Initial Setup</h2>
+                
+                <h3>Step 1: Installation</h3>
+                <div class="steps">
+                    <div class="step">
+                        <h4>1. Visit the Chrome Web Store</h4>
+                        <p>Go to the <a href="https://chrome.google.com/webstore/detail/coverme" target="_blank">Chrome Web Store</a></p>
+                    </div>
+                    <div class="step">
+                        <h4>2. Click "Add to Chrome"</h4>
+                        <p>The CoverMe icon appears in your browser toolbar</p>
+                    </div>
+                </div>
+
+                <h3>Step 2: Getting Your Free API Key</h3>
+                <div class="steps">
+                    <div class="step">
+                        <h4>1. Go to Google AI Studio</h4>
+                        <p>Visit <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a></p>
+                    </div>
+                    <div class="step">
+                        <h4>2. Sign in with your Google account</h4>
+                        <p>Use any Google account you have</p>
+                    </div>
+                    <div class="step">
+                        <h4>3. Click "Create API Key"</h4>
+                        <p>Copy the generated key (starts with "AIza...")</p>
+                    </div>
+                </div>
+
+                <div class="important">
+                    <strong>Important:</strong> This is completely free with 250 requests per day - no credit card needed!
+                </div>
+
+                <h3>Step 3: First Configuration</h3>
+                <div class="steps">
+                    <div class="step">
+                        <h4>1. Right-click the CoverMe extension icon</h4>
+                        <p>Select "Options" from the menu</p>
+                    </div>
+                    <div class="step">
+                        <h4>2. Paste your API key</h4>
+                        <p>Put it in the "Gemini API Key" field</p>
+                    </div>
+                    <div class="step">
+                        <h4>3. Paste your entire resume text</h4>
+                        <p>Copy-paste your resume content in the "Resume Content" box</p>
+                    </div>
+                    <div class="step">
+                        <h4>4. Click "Save User Data"</h4>
+                        <p>CoverMe automatically processes your information</p>
+                    </div>
+                </div>
+
+                <div class="feature-section">
+                    <h4>What happens behind the scenes:</h4>
+                    <ul>
+                        <li>CoverMe automatically extracts your skills using AI</li>
+                        <li>Organizes them into 6 categories: Technical Skills, Frameworks, Domains, Industries, Key Strengths, Role Types</li>
+                        <li>Calculates your experience level from your resume</li>
+                        <li>All data stays on your computer - nothing is sent to external servers</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="options-page">
+                <h2>Options Page Deep Dive</h2>
+                <p>The Options page is your control center. Here's everything you can do:</p>
+
+                <h3>Profile Information Section</h3>
+                <ul>
+                    <li><strong>Experience Years:</strong> Auto-detected from your resume, editable</li>
+                    <li><strong>Seniority Level:</strong> Choose from Entry, Mid, Senior, Lead, Principal</li>
+                    <li><strong>Salary Range:</strong> Optional preference for filtering</li>
+                    <li><strong>Location:</strong> Your preferred work location</li>
+                </ul>
+
+                <h3>Keywords Management</h3>
+                <p>Click "📝 Manage Keywords" to open the comprehensive management interface:</p>
+
+                <div class="feature-section">
+                    <h4>Technical Skills Category:</h4>
+                    <p>Programming languages (JavaScript, Python, Java), technical tools (Docker, Kubernetes, Git). Add new skills using the input field and "Add" button.</p>
+
+                    <h4>Frameworks Category:</h4>
+                    <p>Web frameworks (React, Angular, Vue), backend frameworks (Django, Spring, Express), testing frameworks (Jest, Cypress, Selenium).</p>
+
+                    <h4>Domains Category:</h4>
+                    <p>Industry expertise (Healthcare, Finance, E-commerce), specialized knowledge areas.</p>
+
+                    <h4>Industries Category:</h4>
+                    <p>Sector experience (Technology, Healthcare, Manufacturing), market knowledge.</p>
+
+                    <h4>Key Strengths Category:</h4>
+                    <p>Soft skills (Leadership, Communication, Problem Solving), professional abilities.</p>
+
+                    <h4>Role Types Category:</h4>
+                    <p>Position types (Frontend Developer, Data Scientist, Product Manager), career focuses.</p>
+                </div>
+
+                <h3>Usage Analytics Dashboard</h3>
+                <p>Real-time tracking of your AI usage:</p>
+                <ul>
+                    <li><strong>Daily Progress:</strong> Shows current usage out of 250 daily requests</li>
+                    <li><strong>Rate Limiting:</strong> Monitors requests per minute (max 15)</li>
+                    <li><strong>Weekly Statistics:</strong> 7-day usage breakdown</li>
+                    <li><strong>Quota Reset Timer:</strong> When your daily limit resets (midnight PT)</li>
+                </ul>
+
+                <h3>Data Management Controls</h3>
+                <ul>
+                    <li><strong>Export Data:</strong> Download everything as JSON or CSV</li>
+                    <li><strong>Clear Data Options:</strong> Clear all data, clear only chat history, clear only usage analytics, keep keywords (intelligent selective clearing)</li>
+                    <li><strong>Data Statistics:</strong> See exactly what's stored and how much space it uses</li>
+                </ul>
+            </section>
+
+            <section id="three-ways">
+                <h2>Three Ways to Analyze Jobs</h2>
+
+                <div class="feature-section">
+                    <h3>Method 1: Right-Click Context Menu (Universal)</h3>
+                    <p><strong>Works on:</strong> Every website on the internet</p>
+
+                    <h4>How to use:</h4>
+                    <ol>
+                        <li>Navigate to any job posting on any website</li>
+                        <li>Right-click anywhere on the page</li>
+                        <li>Choose from three options:</li>
+                    </ol>
+
+                    <div class="steps">
+                        <div class="step">
+                            <h4>⚡ "CoverMe: Local Analysis"</h4>
+                            <ul>
+                                <li>Instant keyword matching (no AI calls used)</li>
+                                <li>Shows match percentage in 3 seconds</li>
+                                <li>Highlights skills on the page immediately</li>
+                                <li>Works even on unrecognized job sites</li>
+                                <li>Never fails - 100% success rate</li>
+                            </ul>
+                        </div>
+                        <div class="step">
+                            <h4>🤖 "CoverMe: Ask AI"</h4>
+                            <ul>
+                                <li>Opens side panel if closed</li>
+                                <li>If side panel is already open, triggers analysis directly</li>
+                                <li>State-aware: disabled with helpful tooltip when side panel is closed</li>
+                                <li>Professional error handling with clear user guidance</li>
+                            </ul>
+                        </div>
+                        <div class="step">
+                            <h4>📝 "Add to CoverMe Keywords" (when text is selected)</h4>
+                            <ul>
+                                <li>Select any text on any website</li>
+                                <li>Extracts relevant skills from selected content</li>
+                                <li>Automatically categorizes and adds to your profile</li>
+                                <li>Works for building skills from job descriptions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-section">
+                    <h3>Method 2: Manual Mode (Classic Workflow)</h3>
+                    <p><strong>Best for:</strong> Detailed analysis when you want full control</p>
+
+                    <div class="steps">
+                        <div class="step">
+                            <h4>1. Navigate to any job posting</h4>
+                        </div>
+                        <div class="step">
+                            <h4>2. Click the CoverMe extension icon</h4>
+                            <p>In your browser toolbar</p>
+                        </div>
+                        <div class="step">
+                            <h4>3. Choose analysis type:</h4>
+                            <ul>
+                                <li>"Ask AI" - Opens side panel for detailed analysis</li>
+                                <li>"Deep Research" - Most comprehensive analysis with structured insights</li>
+                                <li>"Keyword Match" - Local analysis button in popup</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tip">
+                        <strong>What you see in the popup:</strong>
+                        <ul>
+                            <li>Job title and company (auto-detected)</li>
+                            <li>Current match percentage</li>
+                            <li>Quick stats (matching skills count, missing skills count)</li>
+                            <li>Analysis buttons</li>
+                            <li>Live mode toggle</li>
+                            <li>Settings access</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-section">
+                    <h3>Method 3: Live Mode (Automatic Monitoring)</h3>
+                    <p><strong>Best for:</strong> Browsing multiple jobs quickly</p>
+
+                    <h4>How to activate:</h4>
+                    <ol>
+                        <li>Click the CoverMe extension icon</li>
+                        <li>Toggle "Live Mode" to ON</li>
+                        <li>Browse jobs normally</li>
+                    </ol>
+
+                    <h4>What happens automatically:</h4>
+                    <ul>
+                        <li>Extension icon changes color as you navigate:
+                            <span class="color-demo green-highlight">🟢 Green: 65%+ match (good fit)</span>
+                            <span class="color-demo" style="background: #fed7aa; color: #ea580c;">🟠 Orange: 45-64% match (okay fit)</span>
+                            <span class="color-demo red-highlight">🔴 Red: <45% match (poor fit)</span>
+                        </li>
+                        <li>Triggers on all recognized job sites</li>
+                        <li>Works across tabs - switch between job postings and see instant updates</li>
+                        <li>Content scripts auto-inject when needed</li>
+                        <li>Automatic error recovery if extension context breaks</li>
+                    </ul>
+
+                    <div class="tip">
+                        <strong>Supported job sites for Live Mode:</strong>
+                        LinkedIn (/jobs/, /in/*/details/), Indeed (/viewjob), Glassdoor (/job-listing/), AngelList (/jobs/), RemoteOK (/remote-jobs/), plus any manually confirmed job sites.
+                    </div>
+                </div>
+            </section>
+
+            <section id="understanding-results">
+                <h2>Understanding Analysis Results</h2>
+
+                <h3>Quick Keyword Matching Results</h3>
+                <div class="feature-section">
+                    <h4>Match Score Calculation:</h4>
+                    <ul>
+                        <li><span class="color-demo green-highlight">Green (65%+)</span>: Strong match - apply with confidence</li>
+                        <li><span class="color-demo" style="background: #fed7aa; color: #ea580c;">Orange (45-64%)</span>: Moderate match - highlight relevant experience</li>
+                        <li><span class="color-demo red-highlight">Red (<45%)</span>: Weak match - consider if it's worth applying</li>
+                    </ul>
+
+                    <h4>Score Components:</h4>
+                    <ul>
+                        <li>Job requirements fulfillment (75% weight)</li>
+                        <li>Skill relevance and strength (25% weight)</li>
+                        <li>Experience level penalties/bonuses</li>
+                    </ul>
+                </div>
+
+                <h3>Experience Qualification</h3>
+                <p>Three categories with precise definitions:</p>
+
+                <div class="feature-section">
+                    <h4>🎯 Well-Matched</h4>
+                    <p>Your experience aligns with job requirements. Sweet spot for applications.</p>
+
+                    <h4>⬆️ Overqualified</h4>
+                    <p>You have 5+ years more experience than required. Score penalty: -10% to -30% depending on gap. Consider: salary expectations, growth opportunities.</p>
+
+                    <h4>⬇️ Underqualified</h4>
+                    <p>You have 1+ years less experience than required. Score penalty: -8% to -25% depending on gap. Consider: emphasizing relevant projects, learning opportunities.</p>
+                </div>
+
+                <h3>Skills Analysis Sections</h3>
+
+                <div class="feature-section">
+                    <h4>✅ Skills You Have That Job Requires</h4>
+                    <ul>
+                        <li>Your matching skills found in the job posting</li>
+                        <li>Sorted by relevance and match confidence</li>
+                        <li>Click [+] to add skills not in your profile</li>
+                        <li>Green highlighting shows these on the job page</li>
+                    </ul>
+
+                    <h4>❌ Skills Job Requires That You Don't Have</h4>
+                    <ul>
+                        <li>Critical missing skills identified by AI</li>
+                        <li>Prioritized by importance to the role</li>
+                        <li>Click [+] to add to your learning list</li>
+                        <li>Red highlighting shows these on the job page</li>
+                    </ul>
+
+                    <h4>🤔 Unknown Skills Found in Job</h4>
+                    <ul>
+                        <li>Skills discovered by pattern matching</li>
+                        <li>Not in your current profile</li>
+                        <li>Confidence percentage (35-80%) based on extraction method</li>
+                        <li>[+] to add, [×] to ignore permanently</li>
+                    </ul>
+
+                    <h4>👤 Your Added Skills</h4>
+                    <ul>
+                        <li>Skills you manually added during analysis</li>
+                        <li>Removable with [-] buttons</li>
+                        <li>Tracked across all job analyses</li>
+                        <li>Auto-categorized by AI during Deep Research</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skill-management">
+                <h2>Interactive Skill Management</h2>
+
+                <h3>Adding Skills During Analysis</h3>
+                <div class="steps">
+                    <div class="step">
+                        <h4>From any skills section:</h4>
+                        <ol>
+                            <li>Click the [+] button next to any skill</li>
+                            <li>Skill immediately appears in your profile</li>
+                            <li>Match percentage recalculates in real-time</li>
+                            <li>Skill appears in future job analyses</li>
+                        </ol>
+                        <p><strong>Visual feedback:</strong> Skills you add get 👤 badges, your match score updates instantly, skills appear in "Your Added Skills" section if not in top matches.</p>
+                    </div>
+                </div>
+
+                <h3>Removing Skills</h3>
+                <div class="feature-section">
+                    <h4>Multiple removal options:</h4>
+                    <ol>
+                        <li><strong>[-] buttons:</strong> Remove individual skills you added</li>
+                        <li><strong>Options page:</strong> Bulk removal from keyword management interface</li>
+                        <li><strong>Ignored skills:</strong> Skills you [×] ignore are tracked and won't appear again</li>
+                    </ol>
+                </div>
+
+                <h3>AI-Powered Skill Categorization</h3>
+                <div class="feature-section">
+                    <h4>Happens automatically after Deep Research:</h4>
+                    <ul>
+                        <li>Skills you add manually start in "Technical Skills"</li>
+                        <li>AI automatically moves them to proper categories:
+                            <ul>
+                                <li>React → Frameworks</li>
+                                <li>Healthcare → Industries</li>
+                                <li>Leadership → Key Strengths</li>
+                            </ul>
+                        </li>
+                        <li>👤 badges are removed once AI categorizes (now "officially organized")</li>
+                        <li>Process is non-critical - Deep Research succeeds even if categorization fails</li>
+                    </ul>
+                </div>
+
+                <h3>Unknown Skills Discovery System</h3>
+                <div class="feature-section">
+                    <h4>5 intelligent extraction patterns:</h4>
+                    <ol>
+                        <li><strong>Technology Names:</strong> Capitalized tech terms (React, Docker, AWS)</li>
+                        <li><strong>Experience Context:</strong> Skills mentioned with experience ("5 years of Python")</li>
+                        <li><strong>Framework Patterns:</strong> Common patterns ("framework", "library", "tool")</li>
+                        <li><strong>Capitalized Terms:</strong> Proper nouns that might be skills</li>
+                        <li><strong>Acronyms:</strong> Technical abbreviations (API, REST, CI/CD)</li>
+                    </ol>
+
+                    <h4>Smart filtering removes:</h4>
+                    <ul>
+                        <li>Common words ("and", "the", "with")</li>
+                        <li>Generic terms ("experience", "knowledge", "skills")</li>
+                        <li>Skills already in your profile</li>
+                        <li>Previously ignored skills</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="ai-chat">
+                <h2>AI Chat System</h2>
+
+                <h3>Job-Specific Conversations</h3>
+                <div class="feature-section">
+                    <h4>Each job gets its own persistent chat thread:</h4>
+                    <ul>
+                        <li>Identified by: Job Title + Company + URL</li>
+                        <li>Chat history persists across browser sessions</li>
+                        <li>Resume when you return to the same job posting</li>
+                        <li>Maximum 50 threads stored, oldest auto-deleted</li>
+                    </ul>
+                </div>
+
+                <h3>Structured Analysis Tiles</h3>
+                <p>Four comprehensive analysis tiles:</p>
+
+                <div class="feature-section">
+                    <h4>🎯 Skills Match Tile</h4>
+                    <ul>
+                        <li>Matches the format of keyword matching for easy comparison</li>
+                        <li>Shows your matching skills, missing skills, experience analysis</li>
+                        <li>Professional formatting with confidence scores</li>
+                    </ul>
+
+                    <h4>💼 Job Fit Assessment Tile</h4>
+                    <ul>
+                        <li>Overall compatibility analysis</li>
+                        <li>Strengths you bring to the role</li>
+                        <li>Areas where you might need to demonstrate extra value</li>
+                        <li>Specific advice for this position</li>
+                    </ul>
+
+                    <h4>🎤 Interview Preparation Tile</h4>
+                    <ul>
+                        <li>Questions likely to be asked based on job requirements</li>
+                        <li>Talking points for your experience</li>
+                        <li>How to address potential concerns</li>
+                        <li>Key things to research about the company/role</li>
+                    </ul>
+
+                    <h4>💡 Strategic Advice Tile</h4>
+                    <ul>
+                        <li>Career guidance specific to this job and your background</li>
+                        <li>Whether you should apply and why</li>
+                        <li>Salary negotiation considerations</li>
+                        <li>Long-term career impact</li>
+                    </ul>
+                </div>
+
+                <h3>Chat Features</h3>
+                <ul>
+                    <li><strong>Persistent History:</strong> 100 messages per thread maximum</li>
+                    <li><strong>Search:</strong> Find previous conversations about specific topics</li>
+                    <li><strong>Professional AI Tone:</strong> Direct, actionable advice without excessive enthusiasm</li>
+                    <li><strong>Job Context:</strong> AI knows the specific job title, company, and your background</li>
+                </ul>
+            </section>
+
+            <section id="highlighting">
+                <h2>Visual Highlighting System</h2>
+
+                <h3>Three-Color Professional Scheme</h3>
+                <div class="feature-section">
+                    <h4><span class="color-demo green-highlight">🟢 Light Green Highlighting: Your Matching Skills</span></h4>
+                    <ul>
+                        <li>Skills you have that the job requires</li>
+                        <li>Instantly shows your strengths on the job page</li>
+                        <li>Smooth gradient background with subtle animations</li>
+                        <li>High contrast for accessibility</li>
+                    </ul>
+
+                    <h4><span class="color-demo purple-highlight">🟣 Purple Highlighting: Experience Requirements</span></h4>
+                    <ul>
+                        <li>Phrases like "5+ years experience", "minimum 3 years"</li>
+                        <li>Helps you quickly assess experience fit</li>
+                        <li>Distinguishes between hard requirements and preferences</li>
+                    </ul>
+
+                    <h4><span class="color-demo red-highlight">🔴 Light Red Highlighting: Missing Critical Skills</span></h4>
+                    <ul>
+                        <li>Skills the job requires that you don't have</li>
+                        <li>Prioritized by importance to the role</li>
+                        <li>Helps identify learning opportunities</li>
+                    </ul>
+                </div>
+
+                <h3>Technical Implementation</h3>
+                <div class="feature-section">
+                    <h4>Robust highlighting engine:</h4>
+                    <ul>
+                        <li><strong>Single-pass processing:</strong> Collects all matches first, then applies highlighting</li>
+                        <li><strong>Overlap prevention:</strong> Smart conflict resolution when text matches multiple patterns</li>
+                        <li><strong>Position-based sorting:</strong> Right-to-left replacement prevents DOM position shifts</li>
+                        <li><strong>Ancestor protection:</strong> Won't highlight inside already-highlighted elements</li>
+                        <li><strong>Performance optimized:</strong> Minimal impact on page loading and browsing</li>
+                    </ul>
+
+                    <h4>Cross-platform compatibility:</h4>
+                    <ul>
+                        <li>Works on LinkedIn's dynamic content loading</li>
+                        <li>Handles Indeed's iframe structure</li>
+                        <li>Compatible with Glassdoor's lazy loading</li>
+                        <li>Adapts to company career page variations</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="usage-analytics">
+                <h2>Usage Analytics</h2>
+
+                <h3>Real-Time Monitoring</h3>
+                <div class="feature-section">
+                    <h4>Dashboard displays:</h4>
+                    <ul>
+                        <li><strong>Daily Usage:</strong> Current requests out of 250 daily limit</li>
+                        <li><strong>Rate Limiting:</strong> Requests per minute (15 RPM max)</li>
+                        <li><strong>Progress Bars:</strong> Color-coded (green → yellow → red as limits approach)</li>
+                        <li><strong>Reset Timer:</strong> Shows when quota resets (midnight Pacific Time)</li>
+                    </ul>
+                </div>
+
+                <h3>Smart Warning System</h3>
+                <div class="feature-section">
+                    <h4>Automatic alerts:</h4>
+                    <ul>
+                        <li><strong>80% Daily Limit:</strong> "You've used 200/250 daily requests"</li>
+                        <li><strong>90% Rate Limit:</strong> "You're approaching the rate limit (14/15 requests per minute)"</li>
+                        <li><strong>Quota Exceeded:</strong> "Daily limit reached. Resets at midnight PT"</li>
+                    </ul>
+                </div>
+
+                <h3>Usage Tracking by Feature</h3>
+                <div class="feature-section">
+                    <h4>Tracked API calls:</h4>
+                    <ul>
+                        <li><strong>Ask AI Analysis:</strong> ~4,096 tokens per request</li>
+                        <li><strong>Deep Research:</strong> ~6,144 tokens per request</li>
+                        <li><strong>Keyword Extraction:</strong> ~2,048 tokens per request (one-time during setup)</li>
+                        <li><strong>Skill Categorization:</strong> ~1,024 tokens per request (automatic during Deep Research)</li>
+                    </ul>
+                </div>
+
+                <h3>Weekly and Monthly Statistics</h3>
+                <ul>
+                    <li><strong>7-day breakdown:</strong> Usage patterns and peaks</li>
+                    <li><strong>Most active days:</strong> When you search for jobs most</li>
+                    <li><strong>Feature usage:</strong> Which analysis types you use most</li>
+                    <li><strong>Efficiency metrics:</strong> Average requests per job analyzed</li>
+                </ul>
+            </section>
+
+            <section id="data-management">
+                <h2>Data Management</h2>
+
+                <h3>Complete Data Transparency</h3>
+                <div class="feature-section">
+                    <h4>Real-time statistics show exactly what's stored:</h4>
+                    <ul>
+                        <li><strong>Keywords:</strong> Count by category, total storage size</li>
+                        <li><strong>Chat History:</strong> Number of threads, total messages, storage size</li>
+                        <li><strong>Usage Analytics:</strong> Days tracked, total API calls made</li>
+                        <li><strong>Job Analysis:</strong> Cached results, interaction history</li>
+                    </ul>
+                </div>
+
+                <h3>Export Functionality</h3>
+                <div class="feature-section">
+                    <h4>Two export formats:</h4>
+
+                    <h4>JSON Export (Developer-Friendly):</h4>
+                    <pre><code>{
+  "userProfile": {
+    "keywords": {
+      "technicalSkills": ["JavaScript", "Python"],
+      "frameworks": ["React", "Django"]
+    },
+    "experienceYears": 5,
+    "seniorityLevel": "Mid"
+  },
+  "chatHistory": [
+    {
+      "jobId": "senior-developer-techcorp",
+      "messages": [...],
+      "lastUpdate": "2025-01-18T10:30:00Z"
+    }
+  ],
+  "usageAnalytics": {
+    "dailyUsage": 150,
+    "weeklyStats": [...]
+  }
+}</code></pre>
+
+                    <h4>CSV Export (Spreadsheet-Friendly):</h4>
+                    <ul>
+                        <li>Keywords sheet with categories</li>
+                        <li>Chat history with timestamps</li>
+                        <li>Usage analytics with dates</li>
+                        <li>Job interactions with outcomes</li>
+                    </ul>
+                </div>
+
+                <h3>Privacy-First Data Handling</h3>
+                <div class="feature-section">
+                    <h4>Local storage only:</h4>
+                    <ul>
+                        <li>Everything stored in <code>chrome.storage.local</code></li>
+                        <li>Encrypted by Chrome automatically</li>
+                        <li>No external servers except Google AI for analysis</li>
+                        <li>Google AI doesn't store your data permanently</li>
+                    </ul>
+
+                    <h4>Automatic cleanup:</h4>
+                    <ul>
+                        <li>Chat threads auto-delete after 30 days</li>
+                        <li>Usage analytics auto-clean after 30 days</li>
+                        <li>User can override with "Keep data longer" setting</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="advanced-features">
+                <h2>Advanced Features</h2>
+
+                <h3>Job Site Learning System</h3>
+                <div class="feature-section">
+                    <h4>Adaptive recognition:</h4>
+                    <ul>
+                        <li>When you use context menu on unrecognized sites, CoverMe asks: "Is this actually a job posting page?"</li>
+                        <li>If you confirm "Yes", it learns the URL pattern</li>
+                        <li>Future visits to similar pages on that site are automatically recognized</li>
+                        <li>Patterns stored: domain + first 1-2 path segments</li>
+                    </ul>
+                </div>
+
+                <h3>Content Script Health Management</h3>
+                <div class="feature-section">
+                    <h4>Robust background system:</h4>
+                    <ul>
+                        <li><strong>Health check protocol:</strong> PING/PONG system ensures content scripts are responsive</li>
+                        <li><strong>Auto-injection:</strong> Automatically injects content scripts when needed</li>
+                        <li><strong>Context recovery:</strong> Handles extension context invalidation gracefully</li>
+                        <li><strong>Cross-tab communication:</strong> Live mode state synced across all tabs</li>
+                    </ul>
+                </div>
+
+                <h3>Smart Error Recovery</h3>
+                <div class="feature-section">
+                    <h4>Never-fail philosophy:</h4>
+                    <ul>
+                        <li><strong>Local analysis:</strong> Always succeeds through multiple fallback strategies</li>
+                        <li><strong>Content extraction:</strong> Multiple selectors and heuristic detection</li>
+                        <li><strong>Extension recovery:</strong> Automatic page refresh for broken contexts (once per page)</li>
+                        <li><strong>User guidance:</strong> Clear error messages with actionable next steps</li>
+                    </ul>
+                </div>
+
+                <h3>Performance Optimizations</h3>
+                <div class="feature-section">
+                    <h4>Efficient processing:</h4>
+                    <ul>
+                        <li><strong>Background processing:</strong> Analysis happens without blocking UI</li>
+                        <li><strong>Intelligent caching:</strong> Avoid re-analyzing the same job posting</li>
+                        <li><strong>Minimal DOM impact:</strong> Highlighting adds <0.1s to page load</li>
+                        <li><strong>Smart rate limiting:</strong> Queues requests to stay within Google's limits</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="highlight">
+                <h2>Why This Level of Detail Matters</h2>
+                <p>This user guide showcases the incredible depth and thoughtfulness that went into building CoverMe. Every feature was carefully designed to solve real problems job seekers face:</p>
+                <ul>
+                    <li><strong>Universal compatibility</strong> because job seekers don't just use LinkedIn</li>
+                    <li><strong>Multiple analysis methods</strong> because different situations need different approaches</li>
+                    <li><strong>Persistent chat</strong> because job searching is an ongoing conversation</li>
+                    <li><strong>Interactive skill management</strong> because your career profile evolves</li>
+                    <li><strong>Visual highlighting</strong> because seeing is faster than reading</li>
+                    <li><strong>Complete data control</strong> because your career data should be yours</li>
+                </ul>
+                <p>CoverMe isn't just another browser extension - it's a comprehensive career intelligence platform that respects your privacy while providing professional-grade insights.</p>
+                <p><strong>The result:</strong> A tool that actually helps you make better career decisions, saves time, and grows with you throughout your job search journey.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CoverMe. Your data stays private on your computer. Free to use with Google's AI API.</p>
+            <p><a href="index.html">Home</a> | <a href="mailto:sreenurajvarma@gmail.com">Contact</a> | <a href="https://github.com/Sreenuraj/CoverMe-Support">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
