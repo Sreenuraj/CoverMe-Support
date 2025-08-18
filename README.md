@@ -2,6 +2,8 @@
 
 CoverMe helps you understand if you're a good fit for jobs before applying. It's like having a smart assistant that reads job postings and compares them to your skills.
 
+**📖 [Complete User Guide](https://sreenuraj.github.io/CoverMe-Support/user-guide.html) - See every feature in detail**
+
 ## What it does
 
 - **Analyzes any job posting** and tells you how well you match (shows green/orange/red scores)
@@ -59,7 +61,7 @@ Works on LinkedIn, Indeed, Glassdoor, company career pages, and ANY website.
    - **Green** = good match, Orange = okay match, Red = poor match
 4. Triggers automatically on all job pages without clicking
 
-## Useful features
+## Key features
 
 ### 🎨 Smart Three-Color Highlighting
 - **Green highlighting:** Your skills that match the job
@@ -95,9 +97,7 @@ Helps you understand if you should apply or focus on building more experience.
 
 ### 🌐 Universal Job Site Compatibility
 Works reliably on:
-- LinkedIn
-- Indeed
-- Glassdoor
+- LinkedIn, Indeed, Glassdoor
 - Company career pages
 - AngelList, Upwork, RemoteOK
 - ANY website where you find job postings
@@ -107,16 +107,6 @@ Works reliably on:
 - **Export your data anytime** in JSON or CSV format
 - **Clear data selectively** - remove what you don't need
 - **Automatic cleanup** after 30 days to keep storage efficient
-
-## What makes it helpful
-
-- **Saves time** by showing job fit before you spend time applying
-- **Helps you learn** which skills to focus on for your career
-- **Gives you talking points** for interviews based on job requirements
-- **Works reliably** on ALL major job sites and company career pages
-- **Keeps all your data private** on your computer
-- **Never fails** - always gives you results even on unrecognized job sites
-- **Automatically learns** and improves your skill profile as you use it
 
 ## Real example walkthrough
 
@@ -132,21 +122,28 @@ Works reliably on:
 
 **Result:** You understand exactly why you're a good fit, what to emphasize in your application, and what skills to learn next.
 
+## Documentation
+
+- **📖 [Complete User Guide](https://sreenuraj.github.io/CoverMe-Support/user-guide.html)** - Detailed walkthrough of every feature
+- **🚀 [Installation Guide](INSTALLATION.md)** - 5-minute setup with troubleshooting
+- **🔒 [Privacy Policy](PRIVACY.md)** - How your data is handled
+- **🌐 [Website](https://sreenuraj.github.io/CoverMe-Support/)** - Project homepage
+
 ## Simple idea
 
 Instead of guessing if you should apply to a job, CoverMe gives you a clear answer with reasons why - and works everywhere you find jobs.
 
 ## Support
 
-- **Questions or issues?** [Create an issue](https://github.com/Sreenuraj/CoverMe-Support/issues)
-- **Email support:** sreenurajvarma@gmail.com
-- **Documentation:** https://sreenuraj.github.io/CoverMe-Support
+- **📖 Complete help:** [User Guide](https://sreenuraj.github.io/CoverMe-Support/user-guide.html)
+- **🐛 Questions or issues:** [Create an issue](https://github.com/Sreenuraj/CoverMe-Support/issues)
+- **✉️ Email support:** sreenurajvarma@gmail.com
+- **💰 Support development:** [PayPal](https://paypal.me/sreenuraj)
 
 ## Community
 
-- **Support development:** [PayPal](https://paypal.me/sreenuraj)
-- **Feature requests:** [GitHub Issues](https://github.com/Sreenuraj/CoverMe-Support/issues) with "enhancement" label
-- **Bug reports:** [GitHub Issues](https://github.com/Sreenuraj/CoverMe-Support/issues) with "bug" label
+- **🎯 Feature requests:** [GitHub Issues](https://github.com/Sreenuraj/CoverMe-Support/issues) with "enhancement" label
+- **🐛 Bug reports:** [GitHub Issues](https://github.com/Sreenuraj/CoverMe-Support/issues) with "bug" label
 
 ---
 
