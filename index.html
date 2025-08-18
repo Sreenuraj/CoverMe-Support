@@ -43,6 +43,23 @@
             color: #2563eb;
         }
 
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links a {
+            color: #2563eb;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+
+        .nav-links a:hover {
+            background: #eff6ff;
+        }
+
         .install-btn {
             background: #2563eb;
             color: white;
@@ -80,6 +97,13 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .features {
@@ -223,6 +247,21 @@
             color: white;
         }
 
+        .guide-btn {
+            background: #059669;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .guide-btn:hover {
+            background: #047857;
+        }
+
         footer {
             text-align: center;
             padding: 2rem 0;
@@ -244,6 +283,11 @@
                 flex-direction: column;
                 gap: 1rem;
             }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -252,7 +296,12 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">CoverMe</div>
-                <a href="https://chrome.google.com/webstore/detail/coverme" class="install-btn">Install Free Extension</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="user-guide.html">User Guide</a>
+                    <a href="https://github.com/Sreenuraj/CoverMe-Support">GitHub</a>
+                    <a href="https://chrome.google.com/webstore/detail/coverme" class="install-btn">Install</a>
+                </div>
             </div>
         </div>
     </header>
@@ -261,7 +310,10 @@
         <section class="hero">
             <h1>Know if you're a good fit before applying</h1>
             <p>CoverMe analyzes any job posting and shows you exactly how well you match - with AI-powered insights and visual highlighting on every job site.</p>
-            <a href="https://chrome.google.com/webstore/detail/coverme" class="install-btn">Install from Chrome Web Store</a>
+            <div class="hero-buttons">
+                <a href="https://chrome.google.com/webstore/detail/coverme" class="install-btn">Install from Chrome Web Store</a>
+                <a href="user-guide.html" class="guide-btn">📖 Complete User Guide</a>
+            </div>
         </section>
 
         <section class="features">
@@ -362,12 +414,14 @@
             <h2>See it in action</h2>
             <p>CoverMe analyzes a job posting and shows you're a 75% match, highlights your React and JavaScript skills in green, shows missing TypeScript in red, and suggests what to emphasize in your application.</p>
             <p><strong>Real result:</strong> You know exactly why you're a good fit, what to highlight in your cover letter, and what skills to learn next.</p>
+            <p><a href="user-guide.html" class="guide-btn">📖 Read the complete user guide to see all features in detail</a></p>
         </section>
 
         <section class="support">
             <h2>Need help or have questions?</h2>
             <p>We're here to help you make the most of CoverMe</p>
             <div class="support-links">
+                <a href="user-guide.html" class="support-link">📖 User Guide</a>
                 <a href="https://github.com/Sreenuraj/CoverMe-Support/issues" class="support-link">GitHub Issues</a>
                 <a href="mailto:sreenurajvarma@gmail.com" class="support-link">Email Support</a>
                 <a href="https://paypal.me/sreenuraj" class="support-link">Support Development</a>
@@ -378,6 +432,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 CoverMe. Your data stays private on your computer. Free to use with Google's AI API.</p>
+            <p><a href="user-guide.html">Complete User Guide</a> | <a href="mailto:sreenurajvarma@gmail.com">Contact</a> | <a href="https://github.com/Sreenuraj/CoverMe-Support">GitHub</a></p>
         </div>
     </footer>
 </body>
