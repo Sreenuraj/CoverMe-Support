@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoverMe - AI Job Search Intelligence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .install-btn {
+            background: #2563eb;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .install-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .feature h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .feature p {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+
+        .feature ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature li {
+            padding: 0.25rem 0;
+            color: #6b7280;
+        }
+
+        .feature li:before {
+            content: "✓ ";
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        .how-it-works {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .how-it-works h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1f2937;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step-number {
+            background: #2563eb;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+        }
+
+        .step h3 {
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .step p {
+            color: #6b7280;
+        }
+
+        .demo {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .demo h2 {
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .demo p {
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+
+        .support {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .support h2 {
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        .support-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .support-link {
+            color: #2563eb;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .support-link:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #6b7280;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">CoverMe</div>
+                <a href="https://chrome.google.com/webstore/detail/coverme" class="install-btn">Install Free Extension</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Know if you're a good fit before applying</h1>
+            <p>CoverMe analyzes any job posting and shows you exactly how well you match - with AI-powered insights and visual highlighting on every job site.</p>
+            <a href="https://chrome.google.com/webstore/detail/coverme" class="install-btn">Install from Chrome Web Store</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>🎯 Instant Job Analysis</h3>
+                <p>Get immediate feedback on any job posting with three analysis methods:</p>
+                <ul>
+                    <li>Quick keyword matching for instant results</li>
+                    <li>AI-powered detailed analysis</li>
+                    <li>Deep research with personalized advice</li>
+                    <li>Experience qualification scoring</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>🎨 Visual Skill Highlighting</h3>
+                <p>See your compatibility directly on job pages:</p>
+                <ul>
+                    <li>Green highlights for your matching skills</li>
+                    <li>Purple highlights for experience requirements</li>
+                    <li>Red highlights for missing critical skills</li>
+                    <li>Works on ALL job sites automatically</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>💬 Smart Career Chat</h3>
+                <p>Get personalized advice for every job:</p>
+                <ul>
+                    <li>Job-specific conversation threads</li>
+                    <li>Persistent chat history across sessions</li>
+                    <li>Interview preparation guidance</li>
+                    <li>Career strategy recommendations</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>🔧 Interactive Skill Management</h3>
+                <p>Build and refine your professional profile:</p>
+                <ul>
+                    <li>Add/remove skills with + and - buttons</li>
+                    <li>Discover unknown skills in job postings</li>
+                    <li>AI-powered skill categorization</li>
+                    <li>Track skills across multiple jobs</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>⚡ Universal Compatibility</h3>
+                <p>Works everywhere you find jobs:</p>
+                <ul>
+                    <li>LinkedIn, Indeed, Glassdoor</li>
+                    <li>Company career pages</li>
+                    <li>Right-click context menu on any website</li>
+                    <li>Automatic live mode monitoring</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>🔒 Privacy & Control</h3>
+                <p>Your data stays secure and manageable:</p>
+                <ul>
+                    <li>All processing happens on your computer</li>
+                    <li>Export data anytime (JSON/CSV)</li>
+                    <li>Usage analytics and API tracking</li>
+                    <li>Complete data transparency</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How to get started</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Install Extension</h3>
+                    <p>Add CoverMe to Chrome from the Web Store (takes 30 seconds)</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Get Free API Key</h3>
+                    <p>Visit Google AI Studio, create a free API key (no credit card needed)</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Add Your Resume</h3>
+                    <p>Paste your resume text in the options page - it automatically finds your skills</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Start Analyzing Jobs</h3>
+                    <p>Right-click any job posting or use the extension icon to get instant analysis</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo">
+            <h2>See it in action</h2>
+            <p>CoverMe analyzes a job posting and shows you're a 75% match, highlights your React and JavaScript skills in green, shows missing TypeScript in red, and suggests what to emphasize in your application.</p>
+            <p><strong>Real result:</strong> You know exactly why you're a good fit, what to highlight in your cover letter, and what skills to learn next.</p>
+        </section>
+
+        <section class="support">
+            <h2>Need help or have questions?</h2>
+            <p>We're here to help you make the most of CoverMe</p>
+            <div class="support-links">
+                <a href="https://github.com/Sreenuraj/CoverMe-Support/issues" class="support-link">GitHub Issues</a>
+                <a href="mailto:sreenurajvarma@gmail.com" class="support-link">Email Support</a>
+                <a href="https://paypal.me/sreenuraj" class="support-link">Support Development</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CoverMe. Your data stays private on your computer. Free to use with Google's AI API.</p>
+        </div>
+    </footer>
+</body>
+</html>
