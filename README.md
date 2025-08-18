@@ -27,7 +27,7 @@ CoverMe helps you understand if you're a good fit for jobs before applying. It's
    - Right-click the CoverMe extension icon → "Options"
    - Paste your API key in the first box
    - Copy-paste your resume text in the second box
-   - Click "Save" - it will automatically find your skills and experience
+   - Click Save - it will automatically find your skills and experience
 
 That's it! You're ready to analyze jobs.
 
@@ -37,7 +37,7 @@ That's it! You're ready to analyze jobs.
 **Best for:** Quick analysis on any website
 
 - **Right-click any job page** → "CoverMe: Local Analysis" for instant keyword matching
-- **Right-click any job page** → "CoverMe: Ask AI" to open detailed AI analysis
+- **Right-click any job page** → "CoverMe: Ask AI" to open the side panel for detailed analysis
 - **Select any text** → "Add to CoverMe Keywords" to add skills from job descriptions
 
 Works on LinkedIn, Indeed, Glassdoor, company career pages, and ANY website.
@@ -56,13 +56,10 @@ Works on LinkedIn, Indeed, Glassdoor, company career pages, and ANY website.
 1. Click the CoverMe extension icon
 2. Turn on "Live Mode"
 3. As you browse jobs, the extension icon changes color automatically:
-   - **Green** = good match
-   - **Orange** = okay match  
-   - **Red** = poor match
+   - **Green** = good match, Orange = okay match, Red = poor match
+4. Triggers automatically on all job pages without clicking
 
-Triggers automatically on all job pages without clicking anything.
-
-## Key features that make CoverMe useful
+## Useful features
 
 ### 🎨 Smart Three-Color Highlighting
 - **Green highlighting:** Your skills that match the job
